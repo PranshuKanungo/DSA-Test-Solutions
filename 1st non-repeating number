@@ -1,0 +1,21 @@
+CODE: 
+TC = O(N) SC: O(1)
+Algorithm :
+1. first store the frequency of the letters in the hashmap using get() function.
+2. After storing, traverse the hashmap and check for the value i.e frequency==1.
+3. The very first key it will encounter whose value is equal to 1 will be returned.
+
+s = "leetcode"
+def firstdifferentnumber():
+    n = len(s)
+
+    hashmap = {}
+    for i in range(n):
+        c = s[i]
+        hashmap[c] = hashmap.get(c,0)+1
+    for i in range(n):
+        if hashmap[s[i]] ==1:
+            return i
+        return -1
+print(firstdifferentnumber())
+Output : 0
