@@ -1,0 +1,31 @@
+Que: Implement a stack using a list in Python. Include the necessary methods such as push, pop, and isEmpty.
+
+
+stack = [] 
+
+##Push() in stack using list functions
+stack.append('s')
+stack.append('t')
+stack.append('a')
+stack.append('c')
+stack.append('k')
+
+print(stack)
+
+## Pop()
+stack.pop()
+
+print(stack)
+
+##Peek()
+print(stack[-1])
+
+
+##isEmpty
+if len(stack) == 0:
+    
+    return True
+    
+else : 
+    
+    return False
