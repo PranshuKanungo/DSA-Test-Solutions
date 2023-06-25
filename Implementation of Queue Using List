@@ -1,0 +1,28 @@
+Que: Implement a queue using a list in Python. Include the necessary methods such as enqueue, dequeue, and isEmpty.
+
+Queue = [] 
+
+##Enqueue in Queue using list functions
+Queue.append('Q')
+Queue.append('U')
+Queue.append('E')
+Queue.append('U')
+Queue.append('E')
+
+print(Queue)
+
+## Dequeue In Queue 
+
+Queue.pop(0)
+
+print(Queue)
+
+##Peek()
+print(Queue[0])
+
+
+##isEmpty
+if len(Queue) == 0:
+    return True
+else:
+    return False
